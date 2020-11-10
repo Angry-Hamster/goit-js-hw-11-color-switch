@@ -1,5 +1,7 @@
 import css from "./css/style.css";
 
+console.log('this code is doing')
+
 const colors = [
   '#FFFFFF',
   '#2196F3',
