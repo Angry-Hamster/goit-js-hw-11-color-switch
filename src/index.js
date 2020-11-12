@@ -20,7 +20,7 @@ const randomIntegerFromInterval = (min, max) => {
 
 const body = document.body
 const startBtn = document.getElementById('start')
-const stpoBtn = document.getElementById('stpo')
+const stpoBtn = document.getElementById('stop')
 
 stpoBtn.disabled = true
 let timerId
@@ -29,12 +29,10 @@ startBtn.addEventListener('click', () => {
   timerId = setInterval(() => changeColor(colors, body), 1000)
   startBtn.disabled = true
   stpoBtn.disabled = false
-  console.log('start');
 })
 
 stpoBtn.addEventListener('click', () => {
   clearInterval(timerId)
   stpoBtn.disabled = true
   startBtn.disabled = false
-  console.log('stop');
 })
