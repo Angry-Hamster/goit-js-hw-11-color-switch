@@ -24,6 +24,9 @@ const body = document.body
 const startBtn = document.body.childNodes[1]
 const stpoBtn = document.body.childNodes[3]
 
+console.log(startBtn);
+console.log(stpoBtn);
+
 stpoBtn.disabled = true
 let timerId
 
