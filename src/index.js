@@ -1,7 +1,5 @@
 import css from "./css/style.css";
 
-console.log('this code is doing')
-
 const colors = [
   '#FFFFFF',
   '#2196F3',
@@ -21,11 +19,8 @@ const randomIntegerFromInterval = (min, max) => {
 };
 
 const body = document.body
-const startBtn = document.body.childNodes[1]
-const stpoBtn = document.body.childNodes[3]
-
-console.log(startBtn);
-console.log(stpoBtn);
+const startBtn = document.getElementById('start')
+const stpoBtn = document.getElementById('stpo')
 
 stpoBtn.disabled = true
 let timerId
